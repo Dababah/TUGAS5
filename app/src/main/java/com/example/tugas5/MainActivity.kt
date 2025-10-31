@@ -50,4 +50,17 @@ class MainActivity : ComponentActivity() {
                         verticalArrangement = Arrangement.spacedBy(16.dp),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
+                        ElevatedCard(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = 8.dp),
+                            shape = RoundedCornerShape(12.dp)
+                        ) {
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(16.dp),
+                                verticalArrangement = Arrangement.spacedBy(16.dp)
+                            )
+                    }
 
