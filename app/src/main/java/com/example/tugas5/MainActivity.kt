@@ -62,5 +62,13 @@ class MainActivity : ComponentActivity() {
                                     .padding(16.dp),
                                 verticalArrangement = Arrangement.spacedBy(16.dp)
                             )
-                    }
+                    }{
+
+                            Text("NAMA LENGKAP", style = MaterialTheme.typography.labelMedium, color = Color.Black)
+                            TextField(
+                                value = "",
+                                onValueChange = {},
+                                placeholder = { Text("Isian nama lengkap") },
+                                modifier = Modifier.fillMaxWidth()
+                            )
 
