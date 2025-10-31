@@ -95,6 +95,25 @@ class MainActivity : ComponentActivity() {
                                 placeholder = { Text("Alamat") },
                                 modifier = Modifier.fillMaxWidth()
                             )
+                            Button(
+                                onClick = {  },
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .height(50.dp),
+                                shape = RoundedCornerShape(8.dp),
+                                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF7E57C2))
+                            ) {
+                                Text("Submit", color = Color.White, fontSize = 16.sp)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
 
 
 
