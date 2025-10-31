@@ -71,4 +71,13 @@ class MainActivity : ComponentActivity() {
                                 placeholder = { Text("Isian nama lengkap") },
                                 modifier = Modifier.fillMaxWidth()
                             )
+                            Text("JENIS KELAMIN", style = MaterialTheme.typography.labelMedium, color = Color.Black)
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.spacedBy(16.dp)
+                            ) {
+                                RadioButtonOption(text = "Laki-laki", selected = false, onSelected = {})
+                                RadioButtonOption(text = "Perempuan", selected = false, onSelected = {})
+                            }
+
 
